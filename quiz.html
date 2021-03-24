@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Квиз - таргет</title>
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/icons/arrow.ico">
+
+     <!-- Facebook -->
+     <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '699136430769077'); 
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=699136430769077&ev=PageView
+        &noscript=1"/>
+    </noscript>
+
+    <!-- Yandex metrika -->
+    <script type="text/javascript" > 
+        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym"); ym(68705686, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); 
+    </script> 
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/68705686" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+</head>
+
+<body class="quiz-body">
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+
+                    <div class="header__burger burger">
+                        <div class="burger__menu">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="header-column logo">
+                        <p class="logo__text">
+                            Реклама в соцсетях
+                        </p>
+                    </div>
+
+                    <nav class="header-column menu__nav">                        
+                        <ul class="menu__list">
+                            <li class="menu__link about-link"><a href="index.html#about">Главная</a></li>
+                            <li class="menu__link present-link"><a href="index.html#present">Подарок</a></li>
+                            <li class="menu__link cooperation-link"><a href="index.html#cooperation">Этапы работы</a></li>
+                            <li class="menu__link results-link"><a href="index.html#results">Результаты</a></li>
+                            <li class="menu__link reviews-link"><a href="index.html#reviews">Отзывы</a></li>
+                            <!-- <li class="menu__link case-link"><a href="case.html">Кейс</a></li> -->
+                        </ul>         
+                     </nav>
+
+                    <div class="header-column social">
+                        <div class="social__row">
+                            <a href="http://www.instagram.com/galinevska_ya" class="social__instagram" target="_blank">
+                                <img src="assets/img/icons/instagram.png" alt="Instagram">
+                            </a>
+                            <a href="https://clck.ru/S9Rtu" class="social__whatsapp" target="_blank">
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="https://clck.ru/S9Rtu" class="social__whatsapp-img" target="_blank">
+                                <img src="assets/img/icons/phone.png" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </header>
+
+        <main class="main-quiz">
+            <div class="container">  
+                
+                <div class="quiz-intro">
+                    <div class="quiz-intro__text">
+                        <p class="quiz-text">Хотите, чтобы клиенты находили Вас даже тогда, когда Вы спите?</p>
+                        <p class="quiz-text">Вам нужна профессиональная настройка рекламы в Инстаграм!</p>
+                        <h2 class="quiz-subtitle">Бонус для Вас:</h2>
+                        <p class="quiz-text"><span>Чек-лист</span> "Как правильно оформить аккаунт в Инстаграм?"</p>
+                        <p class="quiz-normal-text">
+                            Просто пройдите тест из 4 вопросов. Это займет не более за 30 секунд!
+                        </p>                                        
+                    </div>
+
+                    <div class="quiz-intro__button buttons">
+                        <a href="#quiz-test-block" class="button-4 button">Поехали!</a>
+                    </div>                    
+                </div>
+
+                <div class="quiz-test-block">
+                    <div class="quiz-test-block__content"> 
+                        <form id="quiz-form" action="quiz-form.php" method="POST">                        
+
+                            <div class="quiz-test-block__page quiz-page-1 open">            
+                                <div class="quiz-page__body">               
+                                    <div class="quiz-page__content"> 
+
+                                        <div class="quiz-page__suptitle">
+                                            <p>Ответьте на несколько вопросов и получите подарки!</p>
+                                            <span class="quiz-page__count">1/4</span>
+                                            <span class="quiz-page__progressbar"></span>
+                                        </div>
+
+                                        <div id="quiz-test-block" class="quiz-page__title">
+                                            <p>Сфера Вашего бизнеса</p>
+                                        </div>
+
+                                        <div class="quiz-page__block block">                                    
+                                            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/1.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Услуги в бьюти-сфере</p>
+                                                </div> 
+                                                <input type="radio" name="businessarea" value="1"> 
+                                            </div>                           
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/2.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Производство/Продажа товаров</p>
+                                                </div>   
+                                                <input type="radio" name="businessarea" value="2">                                           
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/3.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Услуги по ремонту/строительству</p>
+                                                </div>  
+                                                <input type="radio" name="businessarea" value="3">                                            
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/4.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Медицинские услуги</p>
+                                                </div>  
+                                                <input type="radio" name="businessarea" value="4">                                            
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/5.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Коучинг/психология</p>
+                                                </div>    
+                                                <input type="radio" name="businessarea" value="5">                                          
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/6.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Онлайн-курсы</p>
+                                                </div>  
+                                                <input type="radio" name="businessarea" value="6">                                            
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/7.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Кафе/ресторан</p>
+                                                </div>   
+                                                <input type="radio" name="businessarea" value="7">                                           
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/8.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Другое</p>
+                                                </div>    
+                                                <input type="radio" name="businessarea" value="8">                                          
+                                            </div>
+
+                                        </div>  
+
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="quiz-test-block__page quiz-page-2">            
+                                <div class="quiz-page__body">               
+                                    <div class="quiz-page__content"> 
+
+                                        <div class="quiz-page__suptitle">
+                                            <p>Ответьте на несколько вопросов и получите подарки!</p>
+                                            <span class="quiz-page__count">2/4</span>
+                                            <span class="quiz-page__progressbar-green"></span>
+                                            <span class="quiz-page__progressbar"></span>
+                                        </div>
+
+                                        <div class="quiz-page__title">
+                                            <p>Какие методы продвижения Вы использовали ранее?</p>
+                                        </div>
+
+                                        <div class="quiz-page__block block">                                    
+                                          
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/9.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Контекстная реклама</p>
+                                                </div>  
+                                                <input type="radio" name="promotion" value="1">                                            
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/10.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Реклама у блогеров</p>
+                                                </div> 
+                                                <input type="radio" name="promotion" value="2">                                             
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/11.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Таргет Вк/Инстаграм</p>
+                                                </div>  
+                                                <input type="radio" name="promotion" value="3">                                            
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/8.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Другое</p>
+                                                </div>  
+                                                <input type="radio" name="promotion" value="4">                                            
+                                            </div>
+                
+                                        </div>   
+                                        
+                                        <div class="quiz-page__buttons buttons">
+                                            <a class="quiz-page__left-button button-3 button">Назад</a>                            
+                                            <span class="left-arrow"></span>
+                                        </div> 
+
+                                    </div>
+                                </div>
+                            </div> 
+
+                            <div class="quiz-test-block__page quiz-page-3">            
+                                <div class="quiz-page__body">               
+                                    <div class="quiz-page__content"> 
+
+                                        <div class="quiz-page__suptitle">
+                                            <p>Ответьте на несколько вопросов и получите подарки!</p>
+                                            <span class="quiz-page__count">3/4</span>
+                                            <span class="quiz-page__progressbar-green"></span>
+                                            <span class="quiz-page__progressbar"></span>
+                                        </div>
+
+                                        <div class="quiz-page__title">
+                                            <p>Какой максимальный бюджет в месяц Вы планируете тратить на рекламу?</p>
+                                        </div>
+
+                                        <div id="block3" class="quiz-page__block block">
+                                                                                          
+                                            <div class="block__item item">
+                                                <div class="item__text">
+                                                    <p>До 10000 рублей</p>
+                                                </div>
+                                                <input type="radio" value="1" name="budget">
+                                            </div>
+
+                                            <div class="block__item item">
+                                                <div class="item__text">
+                                                    <p>От 10000 до 15000 рублей</p>
+                                                </div>
+                                                <input type="radio" value="2" name="budget">
+                                            </div>
+                                            
+                                            <div class="block__item item">
+                                                <div class="item__text">
+                                                    <p>От 15000 рублей</p>
+                                                </div>
+                                                <input type="radio" value="3" name="budget">
+                                            </div>                                              
+                                            
+                                        </div>
+
+                                        <div class="quiz-page__buttons buttons">
+                                            <a class="quiz-page__left-button button-3 button">Назад</a>                            
+                                            <span class="left-arrow"></span>
+                                        </div>                         
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-test-block__page quiz-page-4">            
+                                <div class="quiz-page__body">               
+                                    <div class="quiz-page__content"> 
+
+                                        <div class="quiz-page__suptitle">
+                                            <p>Ответьте на несколько вопросов и получите подарки!</p>
+                                            <span class="quiz-page__count">4/4</span>
+                                            <span class="quiz-page__progressbar-green"></span>
+                                            <span class="quiz-page__progressbar"></span>
+                                        </div>
+
+                                        <div class="quiz-page__title">
+                                            <p>Какой результат вы бы хотели получить от рекламы в instagram?</p>
+                                        </div>
+
+                                        <div class="quiz-page__block block">                                    
+                                          
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/12.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Узнаваемость бренда</p>
+                                                </div>  
+                                                <input type="radio" name="result" value="1">                                            
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/13.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Увеличение продаж</p>
+                                                </div>  
+                                                <input type="radio" name="result" value="2">                                            
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/14.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Привлечение новых клиентов</p>
+                                                </div>    
+                                                <input type="radio" name="result" value="3">                                          
+                                            </div>
+            
+                                            <div class="block__item item">
+                                                <div class="item__image">
+                                                    <img src="assets/img/quiz/8.jpg" alt="Картинка">
+                                                </div>
+                                                <div class="item__text">
+                                                    <p>Другое</p>
+                                                </div>   
+                                                <input type="radio" name="result" value="4">                                           
+                                            </div>
+
+                                        </div>  
+                                        
+                                        <div class="quiz-page__buttons buttons">
+                                            <a class="quiz-page__left-button button-3 button">Назад</a>                            
+                                            <span class="left-arrow"></span>                                    
+                                        </div> 
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="quiz-test-block__page quiz-page-5">            
+                                <div class="quiz-page__body">               
+                                    <div class="quiz-page__content"> 
+                                                
+                                        <div class="quiz-page__title pt">
+                                            <p>Как Вас зовут?</p>
+                                        </div>                                    
+                                        <div class="quiz-page__form-name quiz-page__form-line">
+                                            <input type="text" name="username" id="username" value="">
+                                        </div>
+
+                                        <div class="quiz-page__title pt">
+                                            <p>Ваш номер телефона/WhatsApp</p>                                   
+                                        </div>
+                                        <div class="quiz-page__small-text">
+                                            <p>Не бойтесь, звонить не буду :)</p>
+                                        </div>
+                                        <div class="quiz-page__form-phone quiz-page__form-line">
+                                            <input type="tel" name="userphone" id="userphone" value="">
+                                        </div>                        
+                                        
+                                        <div class="quiz-page__buttons buttons">
+                                            <a class="quiz-page__left-button button-3 button">Назад</a>                            
+                                            <span class="left-arrow"></span>
+                                            <button class="button button-5" type="submit">Результат</button>
+                                            <span class="right-arrow"></span>
+                                        </div>   
+
+                                    </div>
+                                </div>
+                            </div>  
+                            
+                        </form>   
+                    </div>
+				</div>
+
+                	 <!-- Error popups  -->
+
+                <div id="popup-error-length-name" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">                           
+                            <div class="popup__close close-popup error-cross"></div>
+                            
+                            <div class="popup__title">Имя должно содержать не менее двух букв!</div>           
+
+                            <div class="form__button buttons">
+                                <div class="button-1 button error-button"><p>OK</p></div>
+                            </div>                
+
+                        </div>
+                    </div>
+				</div>
+
+                <div id="popup-error-length-phone" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">                           
+                            <div class="popup__close close-popup error-cross"></div>
+                            
+                            <div class="popup__title">Пожалуйста, введите номер телефона!</div>           
+
+                            <div class="form__button buttons">
+                                <div class="button-1 button error-button"><p>OK</p></div>
+                            </div>                
+
+                        </div>
+                    </div>
+				</div>
+
+                <div id="popup-error-correct-name" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">                           
+                            <div class="popup__close close-popup error-cross"></div>
+                            
+                            <div class="popup__title">Имя должно содержать только буквы!</div>           
+
+                            <div class="form__button buttons">
+                                <div class="button-1 button error-button"><p>OK</p></div>
+                            </div>                
+
+                        </div>
+                    </div>
+				</div>
+
+                <div id="popup-error-phone" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">                           
+                            <div class="popup__close close-popup error-cross"></div>
+                            
+                            <div class="popup__title">Проверьте правильность ввода номера!</div>           
+
+                            <div class="form__button buttons">
+                                <div class="button-1 button error-button"><p>OK</p></div>
+                            </div>                
+
+                        </div>
+                    </div>
+				</div>
+
+                <div id="popup-error-both" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">                           
+                            <div class="popup__close close-popup error-cross"></div>
+                            
+                            <div class="popup__title">Пожалуйста, введите имя и номер телефона корректно!</div>           
+
+                            <div class="form__button buttons">
+                                <div class="button-1 button error-button"><p>OK</p></div>
+                            </div>                
+
+                        </div>
+                    </div>
+				</div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>  
+    <script src="js/popup.js"></script> 
+    <script src="js/validation.js"></script>
+</body>
+
+</html>
